@@ -11,7 +11,7 @@ async function bootstrap() {
     .setTitle('Ecommerce API')
     .setDescription('Ecommerce API description')
     .setVersion('1.0.0')
-    .setDescription('Esta es la documentacion de la API de ecommerce M4')
+    .setDescription('This is the API documentation for the E-commerce App')
     .addBearerAuth()
     .build();
 
