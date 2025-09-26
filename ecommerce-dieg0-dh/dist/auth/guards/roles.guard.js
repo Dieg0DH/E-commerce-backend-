@@ -27,7 +27,7 @@ let RolesGuard = class RolesGuard {
         const hasRole = () => requiredRoles.some((role) => user.roles.includes(role));
         const valid = user && user.roles && hasRole();
         if (!valid)
-            throw new common_1.ForbiddenException('You are not Admin, sweetie! Try again');
+            throw new common_1.ForbiddenException('You do not have admin privileges');
         return valid;
     }
 };
