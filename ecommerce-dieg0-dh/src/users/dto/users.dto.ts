@@ -14,24 +14,24 @@ import { MatchPassword } from 'src/helpers/matchPassword';
 
 export class CreateUserDto {
   /**
-   * @description Este es el nombre del usuario
-   * @example 'Pepito Perez'
+   * @description This is the name of the user
+   * @example 'Mark Zans'
    */
   @IsString()
   @MinLength(3)
   name: string;
 
   /**
-   * @description Este es el email del usuario
-   * @example 'pepito@gmail.com'
+   * @description This is the email of the user
+   * @example 'mark@gmail.com'
    */
   @IsNotEmpty()
   @IsEmail()
   email: string;
 
   /**
-   * @description Este es el password del usuario
-   * @example 'Pepito123!'
+   * @description This is the password of the user
+   * @example 'Mark123!'
    */
   @IsNotEmpty()
   @IsString()
@@ -46,15 +46,15 @@ export class CreateUserDto {
   password: string;
 
   /**
-   * @description Este es el confirm password del usuario
-   * @example 'Pepito123!'
+   * @description This is the confirm password of the user
+   * @example 'Mark123!'
    */
   @IsNotEmpty()
   @Validate(MatchPassword, ['password'])
   confirmPassword: string;
 
   /**
-   * @description Este es el address del usuario
+   * @description This is the address of the user
    * @example '123 Mockingbird Lane ,Apt #4B,Testville, CA 90210'
    */
   @IsNotEmpty()
@@ -63,7 +63,7 @@ export class CreateUserDto {
   address: string;
 
   /**
-   * @description Este es el phone number del usuario
+   * @description This is the phone number of the user
    * @example 5550123456
    */
   @IsNotEmpty()
@@ -71,7 +71,7 @@ export class CreateUserDto {
   phone: number;
 
   /**
-   * @description Este es el city del usuario
+   * @description This is the city of the user
    * @example 'Testville'
    */
   @IsNotEmpty()
@@ -80,7 +80,7 @@ export class CreateUserDto {
   city: string;
 
   /**
-   * @description Este es el country del usuario
+   * @description This is the country of the user
    * @example 'Republic of Eldoria'
    */
   @IsNotEmpty()
