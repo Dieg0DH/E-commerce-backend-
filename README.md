@@ -303,4 +303,3 @@ The API uses JWT (JSON Web Token) authentication:
 <div align="center">
 Made with ❤️ for backend e-commerce
 </div>
-```
