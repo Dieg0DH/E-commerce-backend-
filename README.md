@@ -169,16 +169,10 @@ The project implements comprehensive code quality measures:
 - ESLint configuration with TypeScript support
 - Prettier code formatting
 - TypeScript strict type checking
-- Input validation with DTOs and decorators
 - Error handling and HTTP status codes
 - Database transaction management
 </details>
 
-````
-
-## 🏗️ Project Structure
-
-{{ ... }}
 ## 🏗️ Project Structure
 
 <details>
@@ -232,8 +226,8 @@ ecommerce-dieg0-dh/
 │   │   ├── users.repository.ts
 │   │   ├── dto/                  # User DTOs
 │   │   └── entities/             # User entities
-│   ├── 📁 data.json              # Sample product data
-│   ├── 📁 roles.enum.ts          # User role definitions
+│   ├── 📄 data.json              # Sample product data
+│   ├── 📄 roles.enum.ts          # User role definitions
 │   ├── app.controller.ts
 │   ├── app.module.ts
 │   ├── app.service.ts
@@ -245,6 +239,7 @@ ecommerce-dieg0-dh/
 ├── 📄 .env                      # Environment variables
 └── 📄 README.md
 ```
+
 </details>
 
 ## 🎮 API Endpoints
@@ -292,20 +287,64 @@ ecommerce-dieg0-dh/
 - `DELETE /users/:id` - Delete user (Admin only)
 </details>
 
+```
+
+### Authentication
+
+- `POST /auth/register` - User registration
+- `POST /auth/login` - User login
+- `GET /auth/profile` - Get user profile (Protected)
+
+### Products
+
+- `GET /products` - Get all products (with pagination)
+- `GET /products/seeder` - Seed products with sample data
+- `GET /products/:id` - Get product by ID
+- `POST /products` - Create new product (Admin only)
+- `PUT /products/:id` - Update product (Admin only)
+- `DELETE /products/:id` - Delete product (Admin only)
+
+### Categories
+
+- `GET /categories` - Get all categories
+- `POST /categories` - Create category (Admin only)
+- `PUT /categories/:id` - Update category (Admin only)
+- `DELETE /categories/:id` - Delete category (Admin only)
+
+### Orders
+
+- `GET /orders` - Get user orders (Protected)
+- `POST /orders` - Create new order (Protected)
+- `GET /orders/:id` - Get order by ID (Protected)
+
+### File Upload
+
+- `POST /file-upload` - Upload files (Protected)
+
+### Users
+
+- `GET /users` - Get all users (Admin only)
+- `GET /users/:id` - Get user by ID (Admin only)
+- `PUT /users/:id` - Update user (Admin only)
+- `DELETE /users/:id` - Delete user (Admin only)
+</details>
+
 ## 🔐 Authentication
 
 The API uses JWT (JSON Web Token) authentication:
 
 1. Register a new user or login with existing credentials
 2. Include the JWT token in the Authorization header:
-   ```
-   Authorization: Bearer <your_jwt_token>
-   ```
-   Use `GET /products/seeder` to populate the database with sample data.
+```
+
+Authorization: Bearer <your_jwt_token>
+
+```
+Use `GET /products/seeder` to populate the database with sample data.
 
 ---
 
 <div align="center">
-  Made with ❤️ for backend e-commerce
+Made with ❤️ for backend e-commerce
 </div>
-````
+```
