@@ -178,8 +178,11 @@ The project implements comprehensive code quality measures:
 
 ## 🏗️ Project Structure
 
+{{ ... }}
+## 🏗️ Project Structure
+
 <details>
-  <summary><strong>Backend Structure</strong></summary>
+  <summary><strong>📁 Backend Structure</strong></summary>
 
 ```text
 ecommerce-dieg0-dh/
@@ -241,8 +244,7 @@ ecommerce-dieg0-dh/
 ├── 📄 nest-cli.json
 ├── 📄 .env                      # Environment variables
 └── 📄 README.md
-````
-
+```
 </details>
 
 ## 🎮 API Endpoints
@@ -306,3 +308,4 @@ The API uses JWT (JSON Web Token) authentication:
 <div align="center">
   Made with ❤️ for backend e-commerce
 </div>
+````
