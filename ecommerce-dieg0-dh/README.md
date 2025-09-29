@@ -9,7 +9,7 @@
 ## 📸 Preview
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/4CAF50/FFFFFF?text=E-commerce+Backend+API" alt="E-commerce Backend Preview" width="800">
+  <img src="./assets/images/ecommerce-preview.png" alt="E-commerce Backend Preview" width="800">
 </div>
 
 ## ✨ Features
