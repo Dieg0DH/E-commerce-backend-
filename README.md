@@ -20,7 +20,6 @@
 - Secure user registration and login with JWT authentication
 - Password encryption using bcrypt
 - Role-based access control (Admin/User roles)
-- User profile management
 - Protected routes with guards and decorators
 </details>
 
@@ -30,7 +29,6 @@
 - Complete CRUD operations for products
 - Product categorization system
 - Product pagination and filtering
-- Stock management
 - Product seeding with sample data
 </details>
 
